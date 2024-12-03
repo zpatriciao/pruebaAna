@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">    
+    <link rel="icon" href="./img/Logo.png">
+    <script src="https://kit.fontawesome.com/a0994db117.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Maquetacion Veterinaria</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="c1">
+            <img src="img/Logo.png" alt="">
+        </div>
+        <div class="c2">
+            <button onClick="location.href = '#inicio'">INICIO</button>
+            <button onClick="location.href = '#productos'">PRODUCTOS</button>
+            <button onClick="location.href = '#contacto'">CONTACTENOS</button>
+            <button onClick="location.href = '#login' ">LOGIN</button>
+        </div>
+    </div>
+
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="Ingresa tu correo" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+
+            <button type="submit" class="btn-ingresar">Ingresar</button>
+            <div class="options">
+                <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+                <a href="registro.html" class="register">Registrarse</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="banner">
+    <h1>Veterinaria Maskot</h1>
+    <p>El mejor servicio para tu mascota</p>
+</div>
+<div class="text-inicio" id="inicio">
+    <p>
+        En Maskot ofrecemos atención integral para tu mascota con servicios como consultas veterinarias, vacunación, desparacitación, cirugía, emergencias 24/7, odontología, diagnóstico por imágenes, asesoramiento nutricional, estudios de comportamiento y cuidado geriátrico. Nuestro equipo de profesionales altamente capacitados se dedica a brindar un trato cercano y especializado, garantizando el bienestar de tu compañero en todo momento.
+    </p>
+</div>
+
+<div class="tarjetas" id="mascotas">
+<div class="card">
+    <div class="fila1">
+        <img src="img/bulldog.png" alt="">
+    </div>
+    <div class="fila2">
+        <h2>MASCOTAS</h2>
+        <p>¡Tu mascota merece lo mejor, y en MASKOT estamos aquí para cuidarla! ¡Tu mascota merece lo mejor, y en MASKOT estamos aquí para cuidarla!</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="fila1">
+        <img src="img/comida.png" alt="">
+    </div>
+    <div class="fila2">
+        <h2>COMIDA </h2>
+        <p>Para ofrecer diagnósticos precisos y tratamientos efectivos. ¡Tu mascota merece lo mejor, y en MASKOT estamos aquí para cuidarla!</p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="fila1">
+        <img src="img/cama.png" alt="">
+    </div>
+    <div class="fila2">
+        <h2>ACCESORIOS</h2>
+        <p>Además, contamos con accesorios para todas las razas y tamaños, porque sabemos que cada mascota es única. Ven y descubre lo que tenemos preparado. </p>
+    </div>
+</div>
+</div>
+
+<div class="formulario">
+    <form action="" id="form">
+        <h2>Domicilios MASKOT</h2>
+        <input type="text" placeholder="Escribe tu nombre" name="name" id="nombre">
+        <input type="email" placeholder="Escribe tu correo" name="email" id="correo">
+        <textarea name="textarea" id="pedido" rows="3" cols ="50" placeholder="Escribe tus productos "> </textarea>
+        <button type="submit">SOLICITAR</button>
+    </form>
+</div>
+
+<div class="text-final">
+<p>Puedes contactarnos a través de nuestras redes sociales y <b>visitarnos</b> en nuestras diferentes sedes, estamos ubicados al norte de la ciudad, cedritos y chico norte, recibe descuentos especiales en tus <b>compras </b> <br>
+Por cada <b>5</b> compras realizadas recibes un hermoso <b>Obsequio!</b>
+</p>
+</div>
+<div class="mapa">
+    <div class="ubicacion">
+        <div class="m1">
+            <img src="img/perro.png" alt="">
+        </div>
+        <div class="m2">
+            <h2>Tienda de Mascotas</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63628.35508705395!2d-74.15784313126733!3d4.63468570963938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b679acf7cc5%3A0xa73fc7ab61161cf9!2sSENA%20complejo%20sur%20Centro%20de%20Electricidad%20Electr%C3%B3nica%20y%20Telecomunicaciones!5e0!3m2!1ses!2sco!4v1732032935633!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="contacto" id="contacto">
+        <div class="box">
+            <h2>Redes Sociales</h2>
+            <a target="_blank">
+                <i class="fa-brands fa-instagram "></i>
+                @Maskot
+            </a>
+            <a target="_blank">
+                <i class="fa-solid fa-globe "></i>
+                @Maskot
+            </a>
+            </div>
+            <div class="box">
+                <h2>Contacto</h2> 
+            <a>
+                <i class="fa-solid fa-phone "></i>
+                +546-160000
+            </a>
+            <a target="_blank">
+                <i class="fa-regular fa-envelope "></i>
+                Maskot@maskot.net.co
+            </a>
+        </div>
+        <div class="box">
+            <h2>Ubicacion</h2> 
+            <a href="">
+                <i class="fa-solid fa-location-dot"></i>
+                Bogotá DC
+            </a>
+            <a href="">
+                <i class="fa-solid fa-earth-africa"></i>
+                Colombia
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/modal.js"></script>
+<script src="js/validacionLogin.js"></script>
+
+</body>
+</html>

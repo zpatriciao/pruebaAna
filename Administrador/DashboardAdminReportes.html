@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="../css/dashboardAdmin.css">
+       <link rel="icon" href="../img/Logo.png">
+        <!-- chart js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script  type= "module" src="../js/reportesadmin.js"></script>
+
+          <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="contenedor-dashboard">
+        <!-- Barra lateral -->
+        <aside class="barra-lateral">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo" width="80" height="80">
+                <h2>Administrador</h2>
+            </div>
+            <nav class="menu">
+                <a href="../Administrador/DashboardAdmin.html" class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                    </svg>
+                    Usuarios
+                </a>
+                <a href="#" class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path d="M4 6h16v2H4V6zm0 6h16v2H4v-2zm0 6h16v2H4v-2z"></path>
+                    </svg>
+                    Productos
+                </a>
+                <a href="#" class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path d="M13 12h7v-2h-7V3H4v18h9v-9zm-2-3H6V5h5v4zm11 6h-5v-2h5v2zm-1 4h-4v-2h4v2z"></path>
+                    </svg>
+                    Ventas
+                </a>
+                <a href="#" class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M280-280h80v-200h-80v200Zm320 0h80v-400h-80v400Zm-160 0h80v-120h-80v120Zm0-200h80v-80h-80v80ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+                    Reportes
+                </a>
+                    
+                <a href="../Index.html" class="opcion">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path d="M10 17l5-5-5-5v10zM4 4h2v16H4V4zm16 0h-6v2h6v12h-6v2h6c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z"></path>
+                    </svg>
+                    Salir
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Contenido principal de la página -->
+        <main class="contenido-principal">
+            <!-- Cards de Proyección, Resumen, Ventas -->
+            <div class="cards">
+                <div class="card">
+                    <span class="material-icons">trending_up</span>
+                    <h3>Proyección</h3>
+                </div>
+                <div class="card">
+                    <span class="material-icons">assessment</span>
+                    <h3>Estadisticas</h3>
+                </div>
+                <div class="card">
+                    <span class="material-icons">shopping_cart</span>
+                    <h3>Ventas</h3>
+                </div>
+            </div>
+ <!-- Título -->
+ <h1>Panel de Estadísticas</h1>
+
+ <!-- Contenedor de gráficos -->
+ <div class="contenedor-graficos">
+    
+    <div class="grafico">
+        <p>Ventas por mes</p> 
+         <canvas id="ventasMes"></canvas>
+         
+     </div>
+     <div class="grafico">
+        <p>Servicios más solicitados Maskot</p>
+         <canvas id="serviciosSolicitados"></canvas>
+         
+     </div>
+     <div class="grafico">
+        <p>Mejores clientes Maskot</p>
+         <canvas id="mejoresClientes"></canvas>
+         
+     </div>
+     <div class="grafico">
+        <p>Top productos Maskot</p>
+         <canvas id="topProductos"></canvas>
+        
+     </div>
+ </div>
+        
+
+        
+        </main>
+    </div>
+    
+</body>
+</html>
